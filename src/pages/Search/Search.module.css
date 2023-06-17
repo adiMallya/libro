@@ -1,0 +1,33 @@
+.pageHeader {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+.backBtn {
+    margin: 0;
+    padding: 0.75rem;
+    cursor: pointer;
+}
+
+.searchBar {
+    display: inline-block;
+    background-color: rgb(245, 245, 246);
+    width: 100%;
+    justify-content: space-between;
+    border-radius: 0.3rem;
+}
+
+.searchBar::placeholder {
+    color: var(--bg-color-secondary);
+    font-weight: 600;
+}
+
+.searchInput {
+    width: calc(100% - 2rem);
+    border: none;
+    padding: 0.725rem 1rem;
+    background-color: transparent;
+    font-size: 1rem;
+    outline: none;
+}
