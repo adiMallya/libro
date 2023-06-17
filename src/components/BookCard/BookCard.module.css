@@ -1,0 +1,43 @@
+.card {
+    height: max-content;
+    min-width: 208px;
+    width: 16rem;
+    margin-top: 2rem;
+    background-color: var(--bg-color-primary);
+    cursor: pointer;
+}
+
+.imgContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.cardInfo {
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    flex-grow: 1;
+}
+
+.cardTitle {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: var(--font-semibold);
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.cardSubtitle {
+    font-weight: var(--font-light);
+    color: var(--secondary-text-color);
+}
+
+.cardBtn {
+    margin: 0;
+    margin-right: 0.25rem;
+    padding: 0 0.25rem;
+}
