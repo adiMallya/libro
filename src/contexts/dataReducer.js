@@ -9,7 +9,12 @@ const dataReducer = (state, { type, payload }) => {
         case "INIT_DATA":
             return {
                 ...state,
-                books: [...state.books, payload]
+                books: [...payload]
+            }
+        case "INIT_CATEGORIES":
+            return {
+                ...state,
+                categories: [...payload]
             }
         case "MOVE_TO_CATEGORY":
             return {
@@ -24,6 +29,11 @@ const dataReducer = (state, { type, payload }) => {
             return {
                 ...state,
                 category: [...state.category, payload]
+            }
+        case "SEARCH":
+            return {
+                ...state,
+                search: payload.toLowerCase()
             }
         default: return state;
     }
