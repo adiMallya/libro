@@ -1,10 +1,14 @@
 .card {
-    height: max-content;
+    height: 30rem;
     min-width: 208px;
     width: 16rem;
     margin-top: 2rem;
     background-color: var(--bg-color-primary);
     cursor: pointer;
+}
+
+.imgContainer {
+    height: 20rem;
 }
 
 .imgContainer img {

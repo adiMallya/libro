@@ -21,17 +21,23 @@ const BookCard = ({ book }) => {
         <p className={styles.cardSubtitle}>{author}</p>
         <div>
           <p>Move to...</p>
-          <ul className="list inline-list">
-            {categories.map((category, idx) => (
-              <button
+          <select
+            name="catgeories"
+            onChange={(e) => moveToShelf(_id, e.target.value)}
+          >
+            {categories.map((cat, idx) => (
+              <option
                 key={idx}
-                className={`btn btn--primary-solid ${styles.cardBtn}`}
-                onClick={() => moveToShelf(_id, category)}
+                value={cat}
+                selected={category === cat && "selected"}
               >
-                {category}
-              </button>
+                {cat}
+              </option>
             ))}
-          </ul>
+          </select>
+          {/* <ul className="list inline-list">
+            
+          </ul> */}
         </div>
       </div>
     </div>
