@@ -1,9 +1,14 @@
+import { Route, Routes } from "react-router-dom";
+import { Home, Search } from "src/pages";
 import "./App.css";
 
 function App() {
   return (
     <>
-      <h1>Simple bookshelf app</h1>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/search" element={<Search />} />
+      </Routes>
     </>
   );
 }
